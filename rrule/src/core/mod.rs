@@ -1,4 +1,5 @@
 mod datetime;
+mod range;
 mod rrule;
 mod rruleset;
 mod timezone;
@@ -11,6 +12,8 @@ pub(crate) use datetime::{
     duration_from_midnight, get_day, get_hour, get_minute, get_month, get_second, DateTime,
 };
 pub use timezone::Tz;
+
+pub use range::RangeOrValue;
 
 #[derive(Debug, PartialEq, Eq, PartialOrd, Ord, Clone, Copy)]
 /// An empty struct to keep the validated stage
